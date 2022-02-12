@@ -18,7 +18,7 @@ pdfmetrics.registerFont(TTFont('Arial','Arial.ttf'))
 
 #import the sheet from the excel file
 wb = openpyxl.load_workbook('C:\\Users\\Administrator\\Desktop\\Payslips-with-python-master\\data.xlsx')
-sheet = wb.get_sheet_by_name('employees')
+sheet = wb['employees']
 
 #Page information
 page_width = 2156
